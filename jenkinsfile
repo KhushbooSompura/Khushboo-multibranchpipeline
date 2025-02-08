@@ -1,1 +1,23 @@
-
+pipeline {
+    agent any
+    environment {
+          myappname = "dev"
+    stages {
+        stage('deploying to dev environment') {
+            steps {
+                  echo "We will deploy code for"                
+//
+            }
+        }
+        stage('Test') {
+            steps {
+                //
+            }
+        }
+        stage('Deploy') {
+            steps {
+                //
+            }
+        }
+    }
+}
